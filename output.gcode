@@ -1,20 +1,20 @@
-; M73 P0 R227
-; M73 Q0 S228
-; M201 X1000 Y1000 Z200 E5000 ; sets maximum accelerations, mm/sec^2
-; M203 X200 Y200 Z12 E120 ; sets maximum feedrates, mm / sec
-; M204 S1250 T1250 ; sets acceleration (S) and retract acceleration (R), mm/sec^2
-; M205 X8.00 Y8.00 Z0.40 E4.50 ; sets the jerk limits, mm/sec
-; M205 S0 T0 ; sets the minimum extruding and travel feed rate, mm/sec
-; ;TYPE:Custom
-; M862.3 P "MK3S" ; printer model check
-; M862.1 P0.4 ; nozzle diameter check
-; M115 U3.10.0 ; tell printer latest fw version
-; G90 ; use absolute coordinates
-; M83 ; extruder relative mode
-; M104 S235 ; set extruder temp
-; M140 S30 ; set bed temp
-; M190 S30 ; wait for bed temp
-; M109 S235 ; wait for extruder temp
+M73 P0 R227
+M73 Q0 S228
+M201 X1000 Y1000 Z200 E5000 ; sets maximum accelerations, mm/sec^2
+M203 X200 Y200 Z12 E120 ; sets maximum feedrates, mm / sec
+M204 S1250 T1250 ; sets acceleration (S) and retract acceleration (R), mm/sec^2
+M205 X8.00 Y8.00 Z0.40 E4.50 ; sets the jerk limits, mm/sec
+M205 S0 T0 ; sets the minimum extruding and travel feed rate, mm/sec
+;TYPE:Custom
+M862.3 P "MK3S" ; printer model check
+M862.1 P0.4 ; nozzle diameter check
+M115 U3.10.0 ; tell printer latest fw version
+G90 ; use absolute coordinates
+M83 ; extruder relative mode
+M104 S235 ; set extruder temp
+M140 S30 ; set bed temp
+M190 S30 ; wait for bed temp
+M109 S235 ; wait for extruder temp
 G28 W ; home all without mesh bed level
 G80 ; mesh bed leveling
 G1 Y-3.0 F1000.0 ; go outside print area
