@@ -19,7 +19,7 @@ def add_nozzle_movement(input_file, output_file):
                 f_out.write("G4 P5000\n")
                 # move nozzle back to starting position
 
-input_file = "SmallBellow_0.2mm_FLEX_MK3S_3h48m.gcode"
-output_file = "output.gcode"
+input_file = "SmallBellow_0.15mm_PLA_MK3S_51m.gcode"
+output_file = "SmallBellow_0.15mm_PLA_move.gcode"
 
 add_nozzle_movement(input_file, output_file)
